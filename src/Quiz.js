@@ -14,7 +14,7 @@ class Quiz extends Component {
     quizData.quiz_questions.length)
     return (
       <div>
-        {isQuizEnd ? <QuizEnd />
+        {isQuizEnd ? <QuizEnd /> :
           <QuizQuestion quiz_question={quizData.quiz_questions
           [this.state.quiz_position -1]}/>}
       </div>
